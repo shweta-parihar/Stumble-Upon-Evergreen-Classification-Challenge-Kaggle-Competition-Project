@@ -1,1 +1,5 @@
 # Stumble-Upon-Evergreen-Classification-Challenge-Kaggle-Competition-Project
+
+This dataset contains information about user curated web content discovery engine that recommends relevant, high quality pages and media to its users based on their interests. Some content like news is only relevant for short period of time, whereas there is other content which can be relevant anytime ie. the content is evergreen. We are given the url and the boilerplate text of the websites content and the associated evergreen score - 1 if it is evergreen, 0 is not.
+#
+Our task is to predict the evergreen score of the content so that the website can recommend that content to users anytime. I have used transformers model to extract embeddings for the boilerplate text. This is a binary classification problem. To improve the model efficacy and to make use of the entire train data, stratified k-fold and cross validation techniques are used along with stacked dense layers. I have also employed model checkpoint which saves the best model into a file thus preventing the model to learn non useful parameters.
